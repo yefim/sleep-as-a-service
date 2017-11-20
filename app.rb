@@ -1,2 +1,5 @@
 require 'sinatra'
-get('/:n') { |n| sleep n }
+get '/:n' do |n|
+  sleep n
+  halt 200
+end
